@@ -3,46 +3,238 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 :root {
   --primary-color: #f47726;
 }
+body {
+  font-family: "Poppins", sans-serif;
+}
+/* navbar section  */
+
 .nav_parent {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-top: 0.9rem;
+  margin-block: 1rem;
 }
 
-.logo_img {
-  width: 170px;
-  height: 40px;
+.menu_para span {
+  margin-inline: 1.4rem;
 }
-
 .navbar-btn {
   background-color: var(--primary-color);
-  margin: 0 1rem 0 1rem;
-  padding: 5px 20px;
-
   color: #fff;
   border-radius: 36px;
-
+  margin-left: 16px;
   font-size: 16px;
-  font-weight: 200;
-  text-transform: uppercase;
-  border: 2px solid var(--primary-color);
-  height: 44px;
+  font-weight: 700;
+  border: 2px solid var(--primaryColor);
+  padding: 0.5rem;
+  padding-inline: 1.7rem;
+  text-transform: capitalize;
 }
 
-.menu_para {
+.nav-item {
+  position: relative;
+}
+
+/* 🔥 Mega Menu Box */
+.mega-menu {
+  position: absolute;
+  top: 100%;
+
+  left: 50%;
+  transform: translateX(-50%) translateY(10px);
+
+  width: 100%;
+  max-width: 1200px;
+
+  background: white;
+  padding: 30px;
+
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+}
+
+/* 🔥 Show on hover */
+.nav-item:hover .mega-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-30%) translateY(3%);
+}
+.mega-menu {
+  width: 1400px;
+  position: absolute;
+  right: 1120px;
+}
+
+/* .mega-container {
+  max-width: 1200px;
+  margin: auto;
   display: flex;
-  gap: 50px;
+  gap: 20px;
+  justify-content: space-between;
+} */
+
+.mega-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center; /* 🔥 CENTER */
+  max-width: 1200px;
 }
 
+.nav-menu {
+  display: flex;
+}
+
+.card {
+  flex: 1;
+  padding: 30px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  text-align: center;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+nav {
+  position: relative;
+}
+.navbar-btn:hover {
+  background-color: white;
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+}
+.logo_img {
+  max-width: 180px;
+}
+/* HERO SECTION */
 .hero-section {
-  background-image: url("./public/hero-bg.webp");
-  margin-top: 1.3rem;
-  margin-bottom: 1.3rem;
+  height: 75vh;
+  display: flex;
+  align-items: center;
+  padding-left: 8%;
+  position: relative;
+
+  background: url("/hero-bg.webp");
+
   background-size: cover;
-  background-position: center;
   background-repeat: no-repeat;
+  background-position: center;
+  /* opacity: 99; */
+}
+
+/* CONTENT WRAPPER */
+.hero-content {
+  max-width: 650px;
+  margin-left: 30px;
+}
+
+/* MAIN HEADING */
+.hero-heading {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.5px;
+}
+
+/* SUB TEXT (TYPEWRITER) */
+.hero-subtext {
+  margin-top: 20px;
+  font-size: 1.6rem;
+  color: #ddd;
+  font-weight: 500;
+  position: relative;
+}
+
+/* CURSOR EFFECT */
+.hero-subtext::after {
+  content: "|";
+  margin-left: 5px;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.about-menu {
+  width: 700px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.about-container {
+  display: flex;
+  gap: 40px;
+  padding: 30px;
+}
+
+.about-left {
+  flex: 1;
+}
+
+.about-right {
+  flex: 1;
+  border-left: 1px solid #ddd;
+  padding-left: 20px;
+}
+.about-left h3 {
+  margin-bottom: 10px;
+}
+
+.about-left p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.learn-btn {
+  margin-top: 15px;
+  background-color: orange;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.phone-box {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 20px;
+  width: fit-content;
+  margin: 10px 0;
+}
+
+.email {
+  color: orange;
+  font-weight: 500;
+}
+
+.or-text {
+  margin: 10px 0;
+  color: #888;
+}
+
+.card:hover {
+  background-color: #fff7f0;
+  border: 1px solid orange;
+}
+
+.phone-box:hover {
+  background-color: var(--primary-color);
+  color: white;
 }
