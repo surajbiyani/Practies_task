@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary-color: #f47726;
+}
+.nav_parent {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 0.9rem;
+}
+
+.logo_img {
+  width: 170px;
+  height: 40px;
+}
+
+.navbar-btn {
+  background-color: var(--primary-color);
+  margin: 0 1rem 0 1rem;
+  padding: 5px 20px;
+
+  color: #fff;
+  border-radius: 36px;
+
+  font-size: 16px;
+  font-weight: 200;
+  text-transform: uppercase;
+  border: 2px solid var(--primary-color);
+  height: 44px;
+}
+
+.menu_para {
+  display: flex;
+  gap: 50px;
+}
+
+.hero-section {
+  background-image: url("./public/hero-bg.webp");
+  margin-top: 1.3rem;
+  margin-bottom: 1.3rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
