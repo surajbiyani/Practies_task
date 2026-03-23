@@ -3,7 +3,11 @@ import React from "react";
 const Hero = () => {
   return (
     <div className="hero-section">
-      <img src="./public/hero-bg.webp" alt="heroimage" className="hero-img" />
+      <p className="hero-para1">
+        <span className="hero-span">
+          Software Development Company Delivering Scalable Digital Solutions
+        </span>
+      </p>
     </div>
   );
 };
