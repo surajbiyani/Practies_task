@@ -2,8 +2,8 @@ console.log("Bye world from github ne branch");
 
 console.log(15 * 5);
 
-function New(a) {
-  console.log(a * a);
+function New(b) {
+  console.log(b * b);
 }
 
 New(2);
