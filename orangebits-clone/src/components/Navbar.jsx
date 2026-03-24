@@ -59,9 +59,10 @@ function Navbar() {
 
               <div className="mega-menu about-menu">
                 <div className="about-container">
-                  {/* LEFT SIDE */}
+                  {/* LEFT */}
                   <div className="about-left">
                     <h3>About Orangebits</h3>
+
                     <p>
                       Founded in 2016, Orangebits offers SaaS, Staff
                       Augmentation and Product Engineering Services. Following
@@ -73,15 +74,16 @@ function Navbar() {
                     <button className="learn-btn">Learn More</button>
                   </div>
 
-                  {/* RIGHT SIDE */}
+                  {/* RIGHT */}
                   <div className="about-right">
-                    <p className="contact-title">Call us at:</p>
+                    <p className="call-text">Call us at:</p>
+
                     <div className="phone-box">+91 89569 47646</div>
 
                     <p className="or-text">or</p>
 
                     <p>
-                      Email us at:
+                      Email us at:{" "}
                       <span className="email">info@orangebitsindia.com</span>
                     </p>
                   </div>
