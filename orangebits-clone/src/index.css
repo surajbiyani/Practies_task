@@ -412,3 +412,153 @@ nav {
   background-size: cover;
   opacity: 0.4;
 }
+
+/* why you choose section styling */
+
+.why-section {
+  padding: 16px 100px;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+/* HEADER */
+.why-subtitle {
+  color: #ff6a00;
+  font-size: 30px;
+  font-weight: 330;
+}
+
+.why-title {
+  font-size: 36px;
+  margin-top: 3px;
+  color: #1a2a3a;
+}
+
+.why-desc {
+  max-width: 800px;
+  margin: 0 auto;
+  color: #555;
+}
+
+/* CARDS */
+.why-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 60px;
+  flex-wrap: wrap;
+}
+
+/* CARD */
+.why-card {
+  background: white;
+  width: 220px;
+  padding: 50px 20px 25px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  position: relative;
+  transition: 0.3s;
+}
+
+.why-card:hover {
+  transform: translateY(-8px);
+}
+
+/* ICON */
+.why-icon {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 2px solid #ff6a00;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  font-size: 22px;
+  color: #ff6a00;
+}
+
+/* TEXT */
+.why-card h3 {
+  font-size: 16px;
+  color: #1a2a3a;
+  line-height: 1.5;
+  font-weight: 550;
+}
+
+/* testominal//corusaler */
+.testimonial-wrapper {
+  margin-top: -25px;
+  padding: 60px 0;
+  background: #f9f9f9;
+}
+
+/* 🔥 MAIN CARD */
+.testimonial-card {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  background: #fff;
+  padding: 50px 60px;
+  border-radius: 12px;
+  max-width: 1100px;
+  margin: auto;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* IMAGE */
+.testimonial-card img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* CONTENT */
+.content {
+  max-width: 700px;
+  text-align: left; /* 🔥 IMPORTANT FIX */
+}
+
+/* TEXT */
+.text {
+  font-size: 17px;
+  line-height: 1.8;
+  color: #444;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+/* QUOTE ICON */
+.text::before {
+  content: "“";
+  position: absolute;
+  left: -30px;
+  top: -20px;
+  font-size: 70px;
+  color: #e5e5e5;
+}
+
+/* NAME */
+.content h3 {
+  color: #ff6a00;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+/* ROLE */
+.content span {
+  color: #888;
+  font-size: 14px;
+}
+.testimonial-card {
+  transition: transform 0.3s ease-in-out;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+}
